@@ -1,0 +1,59 @@
+ Salut! Alors voici les background pour les 2 morphospace que je vais montrer en grand, avec des bestioles dessus
+PDF 
+Morpho_backgrounds.pdf
+45 MB PDF45 MB — Click to view
+
+
+
+
+
+
+
+1:36 PM
+Se référer à ceux-ci pour les échelles du modèle:
+1:36 PM
+D de 0 à 0.9, incrément de 0.01
+1:37 PM
+T de 0 à 35, incrément de 1
+1:38 PM
+W en log de 0 à 1000, incrément de 10^0.1, si possible ajouter 2 position au bout pour 10.000 et 100.000
+1:38 PM
+S de 0.1 à 5 en log, incrément de 10^0.01
+1:43 PM
+Pour les formes prédéfinies, je pense que 6 suffisent. Nécessitent le nom en allemand et en anglais, si possible police + grosse pour l'allemand, et l'anglais en italique comme sur les graphs. Je précise l'angle de vue (vertical ou de face) dans le tableau
+Zip 
+predefined forms2.ods
+12 kB Zip12 kB — Click to view
+
+
+1:44 PM
+Accompagner ces formes prédéfinies de l'image correpondante
+1:46 PM
+Sinon pour l'angle de vue, j'avais dit que faire une animation serait bien, mais je me demande si ce serait pas mieux de laisser le visiteur jouer avec, genre faire une échelle verticale á côté des variables, variant donc de -90° à 90°
+1:52 PM
+David W Nombre de tours par défaut =5, mais dépendant des valeurs dans cet ordre hiérarchique: 1 seul si W>100, 2 si D<0.1, 10 si D>0.5, et 10 si W<1.5 et T>2
+1:53 PM
+A tester comme ca, on verra si ca joue.
+10:38 AM
+David W Au fait friday drinks ce soir?
+2:19 PM
+JR ouais ok mias pas avant 20h alors
+2:20 PM
+David W ca me va :slightly_smiling_face:
+2:21 PM
+Je viens de voir un truc qui joue pas dans ce que j'ai écris pour définir le nbre de tours...
+2:22 PM
+2 si D<0.1 et T=0. Ne s'applique pas du moment qu'il y a un T
+2:23 PM
+compliqué les relations à 4 variables...
+2:23 PM
+JR en effet
+2:24 PM
+David W A tester voir si ca joue comme ca. Possible que ya des cas que j'oublie, mais ca devient un peu compliqué là...
+New
+2:26 PM
+Tu pourras aussi mettre les noms des variables tels qu'indiqués sur les graphs, sauf pour D, que je vais remplacer par "Nabelöffnung", "Umbilicus opening"...
+2:27 PM
+(pas sûr pour l'Allemand, demande à Momo si ca passe en un mot comme ca...)
+2:29 PM
+En tous cas ca passe sur google translate

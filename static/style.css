@@ -1,0 +1,74 @@
+div.radio{
+  display:inline-block;
+  vertical-align: middle;
+  width:100%;
+}
+div.img{
+  display:inline;
+  vertical-align: middle;
+}
+div.caption{
+  display:inline-block;
+  vertical-align: middle;
+}
+em{
+  font-size:80%;
+}
+div.flex{
+  display:flex;
+  flex-direction:row;
+  font-size:90%;
+}
+div.left{
+  margin-left:0;
+  flex:1;
+}
+div.middle{
+  margin-left:auto;
+  margin-right:auto;
+  flex:1;
+}
+
+div.right{
+  margin-right:0;
+}
+label{
+  width:100% !important;
+}
+input[type=radio]{
+  margin-top:20px;
+}
+div.orientation{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  padding-left:1em;
+}
+
+hr{
+  border:2px solid black;
+}
+
+form.well{
+  background-color:white;
+}
+
+.shiny-html-output{
+  font-size:24pt !important;
+  position: absolute;
+  top:10%;
+  right:10%;
+  text-align:right;
+}
+
+div.html-widget-output{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  height:100%;
+}
+
+div.container-fluid > h2{
+  text-align:center;
+}

@@ -1,0 +1,10 @@
+4:12 PM
+David W Ouai là tout a l'air de bien marcher, super!! manque juste 3 points donc:
+4:13 PM
+la vue par défaut, de face (90°CCW par rapport à ce qui est donc)
+4:14 PM
+un curseur vertical pour contrôler l'orientation verticale de la vue
+4:14 PM
+remplacer les silhouettes de bestioles par le résultat sur le modèle
+4:14 PM
+JR ok, noté
