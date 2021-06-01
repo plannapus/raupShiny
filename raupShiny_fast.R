@@ -80,7 +80,7 @@ ui_win[["Controller"]] <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       sliderInput(input="W",
-                  label=HTML('<b>Wirbelausdehnungsrate (W)</b><br/><em>Whorl Expansion Rate</em><br/>
+                  label=HTML('<b>Windungsexpansionsrate (W)</b><br/><em>Whorl Expansion Rate</em><br/>
                              <div class="flex"><div class="left"><img src="static/W1.png" height="50"></div>
                              <div class="right"><img src="static/W2.png" height="50"></div></div>'),
                   min = 0, max = 5, value = 0.301, step = .0001),
@@ -101,12 +101,12 @@ ui_win[["Controller"]] <- fluidPage(
                       update_on="change", color="#428bca", step=1, format = wNumbFormat(decimals = 0),
                       pips=list(mode="positions",values=c(0,50,100),density=18)),
       div(HTML('<div class="flex"><div class="left"><b>unter</b><br/><em>below</em></div>
-          <div class="middle"><b>Mundung</b><br/><em>Opening</em></div>
+          <div class="middle"><b>Muendung</b><br/><em>Opening</em></div>
           <div class="right"><b>ober</b><br/><em>above</em></div></div>')),
       width=9
     ),
     mainPanel(
-      radioButtons(inputId="preselect", label=HTML("Vorauswahlen:<br/><em>Preselections:</em>"), 
+      radioButtons(inputId="preselect", label=HTML("Vorausgewählte Formen<br/><em>Preselected shapes</em>"), 
                    choiceNames=list(HTML('<div class="radio"><div class="caption"><b>Kein</b><br/><em>None</em>                             <br/></div></div>'),
                                     HTML('<div class="radio">
                                          <div class="img"><img src="static/nau.png" width="50"></div>
@@ -140,7 +140,7 @@ ui_win[["Controller"]] <- fluidPage(
 # Plot page
 ui_win[["Plot"]] <- fluidPage(
   tags$head(tags$link(rel ="stylesheet", type="text/css", href="static/style.css")),
-  titlePanel(HTML("Placeholder for title in German<br/><em>Raup's shell coiling model</em>")),
+  titlePanel(HTML("Schalenwindungsmodel nach Raup<br/><em>Raup's shell coiling model</em>")),
   htmlOutput("paramstab"),
   rglwidgetOutput("coilrgl",width="80vw", height="90vh"),
 )
