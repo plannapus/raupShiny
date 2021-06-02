@@ -84,7 +84,7 @@ ui_win[["Controller"]] <- fluidPage(
                              <div class="flex"><div class="left"><img src="static/W1.png" height="50"></div>
                              <div class="right"><img src="static/W2.png" height="50"></div></div>'),
                   min = 0, max = 5, value = 0.301, step = .0001),
-      sliderInput(input="D",label=HTML('<b>Abstand der Muendung von der Wickelachse (D)</b><br/><em>Distance of opening from coiling axis</em><br/>
+      sliderInput(input="D",label=HTML('<b>Nabelöffnung (D)</b><br/><em>Umbilicus opening</em><br/>
                              <div class="flex"><div class="left"><img src="static/D1.png" height="50"></div>
                              <div class="right"><img src="static/D2.png" height="50"></div></div>'), 
                   min=0, max=0.9,value=0.3,step=0.01),
