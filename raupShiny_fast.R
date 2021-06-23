@@ -106,7 +106,7 @@ ui_win[["Controller"]] <- fluidPage(
       width=9
     ),
     mainPanel(
-      radioButtons(inputId="preselect", label=HTML("Vorausgewählte Formen<br/><em>Preselected shapes</em>"), 
+      radioButtons(inputId="preselect", label=HTML("Vorausgewaehlte Formen<br/><em>Preselected shapes</em>"), 
                    choiceNames=list(HTML('<div class="radio"><div class="caption"><b>Kein</b><br/><em>None</em>                             <br/></div></div>'),
                                     HTML('<div class="radio">
                                          <div class="img"><img src="static/nau.png" width="50"></div>
