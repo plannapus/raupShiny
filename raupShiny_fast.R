@@ -143,6 +143,9 @@ ui_win[["Plot"]] <- fluidPage(
   titlePanel(HTML("Schalenwindungsmodel nach Raup<br/><em>Raup's shell coiling model</em>")),
   htmlOutput("paramstab"),
   rglwidgetOutput("coilrgl",width="80vw", height="90vh"),
+  div(HTML('<div class="logo"><img src="static/MFN_gross_gruen.jpg" width="100%"><br/>
+  <img src="static/mfn.png" width="100%"><br/>
+      Johan Renaudie &<br/>David Ware (2021)</div>'))
 )
 
 

@@ -72,3 +72,14 @@ div.html-widget-output{
 div.container-fluid > h2{
   text-align:center;
 }
+
+div.logo{
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:9vw;
+}
+
+div.logo img{
+  margin-bottom:5pt;
+}
