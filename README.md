@@ -1,6 +1,6 @@
 ## Raup's Coiling Model
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5171827.svg)](https://doi.org/10.5281/zenodo.5171827)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5355138.svg)](https://doi.org/10.5281/zenodo.5355138)
 
 Shiny app to play with Raup's coiling model, for the exhibition at the Museum für Naturkunde in Magdeburg.
 
