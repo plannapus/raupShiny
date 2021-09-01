@@ -7,6 +7,6 @@ authors:
   - family-names: Ware
     given-names: David
 title: "raupShiny: Shiny app for Raup's Coiling Model"
-version: 1.1
+version: 1.1.1
 doi: 10.5281/zenodo.5171827
-date-released: 2021-08-09
+date-released: 2021-09-01
