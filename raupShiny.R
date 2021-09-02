@@ -43,14 +43,14 @@ coiling <- function(RT,W,generating_shape, turns,steps,dir="dextral"){
 }
 
 #Function to transform the final shape into polygons
-pt2quad <- function(pts,steps,res){
-  pts$pt_n<- rep(1:(res*2+1),each=steps)
-  pts$step <- 1:steps
+pt2quad <- function(steps,res){
+  pt_n<- rep(1:(res*2+1),each=steps)
+  step <- 1:steps
   eg <- expand.grid(1:(2*res),1:(steps-1))
-  apply(eg,1,function(x)c(which(pts$step==x[2] & pts$pt_n==x[1]),
-                          which(pts$step==x[2]+1 & pts$pt_n==x[1]),
-                          which(pts$step==x[2]+1 & pts$pt_n==x[1]+1),
-                          which(pts$step==x[2] & pts$pt_n==x[1]+1)))
+  apply(eg,1,function(x)c(which(step==x[2] & pt_n==x[1]),
+                          which(step==x[2]+1 & pt_n==x[1]),
+                          which(step==x[2]+1 & pt_n==x[1]+1),
+                          which(step==x[2] & pt_n==x[1]+1)))
 }
 
 # Javascript functions for the logarithmic scale
@@ -104,7 +104,7 @@ serverrgl <- function(input,output){
     CE <- as.data.frame(ce)
     CE <- CE[c(2,3,1)]
     CE[,2] <- -1*CE[,2]
-    qd <- pt2quad(CE,steps,res)
+    qd <- pt2quad(steps,res)
     mesh3d(CE,quads=qd)
   })
   output$coilrgl <- renderRglwidget({ #Render it as 3D plot
