@@ -120,7 +120,7 @@ serverrgl <- function(input,output){
   })
   output$save <- downloadHandler(
     filename = function() sprintf("raup_RT=%s_S=%s_D=%s_W=%s.obj",
-                 input$RT,input$S,input$D,input$W),
+                 input$RT,input$S,input$D,round(10^input$W,2)),
     content = function(file) writeOBJ(file)
   )
 }
