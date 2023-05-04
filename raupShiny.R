@@ -79,9 +79,10 @@ uirgl <- fluidPage(
                   min=0.1, max=5,value=1,step=0.01),
       sliderInput(input="RT",label="Rate of translation (T)",
                   min=0, max=35,value=2,step=0.1),
+      downloadButton("save","Save as .OBJ file")
     ),
     mainPanel(
-      rglwidgetOutput("coilrgl",width=800, height=800)
+      rglwidgetOutput("coilrgl",width=800, height=800),
     )
   )
 )
@@ -117,6 +118,11 @@ serverrgl <- function(input,output){
     light3d(theta=10,phi=10)
     rglwidget()
   })
+  output$save <- downloadHandler(
+    filename = function() sprintf("raup_RT=%s_S=%s_D=%s_W=%s.obj",
+                 input$RT,input$S,input$D,input$W),
+    content = function(file) writeOBJ(file)
+  )
 }
 
 shinyApp(ui = uirgl, server = serverrgl,options=list("launch.browser"=TRUE))
